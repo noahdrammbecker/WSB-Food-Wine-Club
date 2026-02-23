@@ -30,9 +30,9 @@ export default function Restaurants() {
   }, [searchQuery, selectedCuisine, selectedPrice]);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 sm:py-16">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 sm:py-20">
       {/* Header */}
-      <div className="mb-10 text-center sm:text-left">
+      <div className="mb-12 text-center sm:text-left">
         <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
           Discover
         </span>
@@ -46,7 +46,7 @@ export default function Restaurants() {
       </div>
 
       {/* Search & Filter */}
-      <div className="mb-8">
+      <div className="mb-10">
         <SearchFilter
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
@@ -61,10 +61,10 @@ export default function Restaurants() {
       {/* Results */}
       {filtered.length > 0 ? (
         <>
-          <p className="text-sm text-charcoal-500 mb-6">
+          <p className="text-sm text-charcoal-500 mb-8">
             {filtered.length} {filtered.length === 1 ? 'restaurant' : 'restaurants'}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map(restaurant => (
               <RestaurantCard key={restaurant.id} restaurant={restaurant} />
             ))}

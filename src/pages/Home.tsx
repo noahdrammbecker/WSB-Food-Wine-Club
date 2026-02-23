@@ -62,8 +62,8 @@ export default function Home() {
 
       {/* Stats Bar */}
       <section className="bg-charcoal-900 border-y border-charcoal-800/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-3 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-3 gap-10 text-center">
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
                 <Wine className="w-4 h-4 text-burgundy-500" />
@@ -90,8 +90,8 @@ export default function Home() {
       </section>
 
       {/* Featured Restaurants */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 sm:py-24">
-        <div className="text-center sm:text-left sm:flex sm:items-end sm:justify-between mb-10">
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20 sm:py-28">
+        <div className="text-center sm:text-left sm:flex sm:items-end sm:justify-between mb-12">
           <div>
             <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
               Club Picks
@@ -109,7 +109,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featured.map(restaurant => (
             <RestaurantCard key={restaurant.id} restaurant={restaurant} />
           ))}
@@ -117,7 +117,7 @@ export default function Home() {
 
         <Link
           to="/restaurants"
-          className="sm:hidden flex items-center justify-center gap-1.5 mt-8 text-sm text-charcoal-400 hover:text-cream-200 transition-colors"
+          className="sm:hidden flex items-center justify-center gap-1.5 mt-10 text-sm text-charcoal-400 hover:text-cream-200 transition-colors"
         >
           View all restaurants
           <ArrowRight className="w-3.5 h-3.5" />
@@ -127,19 +127,19 @@ export default function Home() {
       {/* Next Event */}
       {nextEvent && (
         <section className="bg-charcoal-900 border-y border-charcoal-800/30">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 sm:py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 sm:py-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
                 <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
                   Next Event
                 </span>
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-4">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-5">
                   {nextEvent.title}
                 </h2>
-                <p className="text-charcoal-300 leading-relaxed mb-6">
+                <p className="text-charcoal-300 leading-relaxed mb-8">
                   {nextEvent.description}
                 </p>
-                <div className="space-y-2 mb-8 inline-block text-left">
+                <div className="space-y-3 mb-10 inline-block text-left">
                   <p className="text-sm text-cream-200">
                     <span className="text-charcoal-500">Date:</span>{' '}
                     {new Date(nextEvent.date).toLocaleDateString('en-US', {
@@ -181,11 +181,11 @@ export default function Home() {
       )}
 
       {/* About / CTA */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 sm:py-24 text-center">
-        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-4">
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20 sm:py-28 text-center">
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-6">
           Join the Club
         </h2>
-        <p className="text-charcoal-300 max-w-xl mx-auto mb-8 leading-relaxed">
+        <p className="text-charcoal-300 max-w-xl mx-auto mb-10 leading-relaxed">
           Whether you're a wine novice or a seasoned foodie, the WSB MBA Food & Wine Club
           is your community for exploring Madison's culinary scene. Share reviews, discover
           new favorites, and connect over great food.

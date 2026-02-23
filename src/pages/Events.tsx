@@ -6,9 +6,9 @@ export default function Events() {
   const upcomingEvents = getUpcomingEvents();
 
   return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 sm:py-16">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 sm:py-20">
       {/* Header */}
-      <div className="mb-12 text-center sm:text-left">
+      <div className="mb-14 text-center sm:text-left">
         <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
           What's Happening
         </span>
@@ -23,7 +23,7 @@ export default function Events() {
 
       {/* Events List */}
       {upcomingEvents.length > 0 ? (
-        <div className="space-y-8">
+        <div className="space-y-10">
           {upcomingEvents.map((event, i) => {
             const linkedRestaurant = event.restaurantId
               ? restaurants.find(r => r.id === event.restaurantId)
@@ -46,22 +46,22 @@ export default function Events() {
                 )}
 
                 {/* Content */}
-                <div className={`${event.imageUrl ? 'lg:col-span-3' : 'lg:col-span-5'} p-6 sm:p-8 flex flex-col justify-center`}>
+                <div className={`${event.imageUrl ? 'lg:col-span-3' : 'lg:col-span-5'} p-7 sm:p-10 flex flex-col justify-center`}>
                   {i === 0 && (
                     <span className="inline-block w-fit px-2.5 py-0.5 bg-burgundy-500/20 text-burgundy-300 text-[10px] uppercase tracking-widest rounded mb-3">
                       Next Up
                     </span>
                   )}
 
-                  <h2 className="font-serif text-xl sm:text-2xl font-semibold text-cream-100 mb-3">
+                  <h2 className="font-serif text-xl sm:text-2xl font-semibold text-cream-100 mb-4">
                     {event.title}
                   </h2>
 
-                  <p className="text-charcoal-300 leading-relaxed mb-5 text-sm sm:text-base">
+                  <p className="text-charcoal-300 leading-relaxed mb-6 text-sm sm:text-base">
                     {event.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-x-6 gap-y-2 mb-6">
+                  <div className="flex flex-wrap gap-x-6 gap-y-3 mb-8">
                     <div className="flex items-center gap-2 text-sm text-cream-200">
                       <Calendar className="w-3.5 h-3.5 text-burgundy-500" />
                       {new Date(event.date).toLocaleDateString('en-US', {

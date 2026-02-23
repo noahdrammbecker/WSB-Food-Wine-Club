@@ -45,17 +45,17 @@ export default function RestaurantCard({ restaurant }: RestaurantCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
-        <div className="flex items-start justify-between gap-2 mb-2">
+      <div className="p-6">
+        <div className="flex items-start justify-between gap-2 mb-3">
           <h3 className="font-serif text-lg font-semibold text-cream-100 group-hover:text-burgundy-300 transition-colors">
             {restaurant.name}
           </h3>
           <PriceRange level={restaurant.priceRange} />
         </div>
 
-        <p className="text-sm text-charcoal-400 mb-3">{restaurant.cuisine}</p>
+        <p className="text-sm text-charcoal-400 mb-4">{restaurant.cuisine}</p>
 
-        <div className="flex items-center gap-3 mb-3">
+        <div className="flex items-center gap-3 mb-4">
           {avgRating > 0 ? (
             <>
               <StarRating rating={avgRating} size="sm" />
@@ -73,7 +73,7 @@ export default function RestaurantCard({ restaurant }: RestaurantCardProps) {
         </div>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 mt-3">
+        <div className="flex flex-wrap gap-2 mt-4">
           {restaurant.tags.slice(0, 3).map(tag => (
             <span
               key={tag}
