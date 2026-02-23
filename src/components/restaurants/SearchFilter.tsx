@@ -29,7 +29,7 @@ export default function SearchFilter({
           placeholder="Search restaurants, cuisines, neighborhoods..."
           value={searchQuery}
           onChange={e => onSearchChange(e.target.value)}
-          className="w-full pl-11 pr-4 py-3 bg-charcoal-900 border border-charcoal-800/50 rounded-lg text-sm text-cream-100 placeholder-charcoal-500 focus:outline-none focus:border-burgundy-800/50 transition-colors"
+          className="w-full pl-11 pr-4 py-3 bg-charcoal-900 border border-charcoal-800/50 rounded-lg text-sm text-cream-100 placeholder-charcoal-500 focus:outline-none focus:border-burgundy-500/50 transition-colors"
         />
       </div>
 
@@ -44,7 +44,7 @@ export default function SearchFilter({
         <select
           value={selectedCuisine}
           onChange={e => onCuisineChange(e.target.value)}
-          className="px-3 py-1.5 bg-charcoal-900 border border-charcoal-800/50 rounded text-sm text-cream-200 focus:outline-none focus:border-burgundy-800/50 cursor-pointer"
+          className="px-3 py-1.5 bg-charcoal-900 border border-charcoal-800/50 rounded text-sm text-cream-200 focus:outline-none focus:border-burgundy-500/50 cursor-pointer"
         >
           <option value="">All Cuisines</option>
           {cuisines.map(c => (
@@ -61,7 +61,7 @@ export default function SearchFilter({
               onClick={() => onPriceChange(selectedPrice === price ? null : price)}
               className={`px-2.5 py-1 rounded text-sm transition-colors ${
                 selectedPrice === price
-                  ? 'bg-burgundy-800 text-cream-100'
+                  ? 'bg-burgundy-500 text-cream-100'
                   : 'bg-charcoal-900 text-charcoal-400 border border-charcoal-800/50 hover:text-cream-200'
               }`}
             >
@@ -79,7 +79,7 @@ export default function SearchFilter({
               onCuisineChange('');
               onPriceChange(null);
             }}
-            className="text-xs text-burgundy-800 hover:text-burgundy-700 transition-colors"
+            className="text-xs text-burgundy-500 hover:text-burgundy-400 transition-colors"
           >
             Clear all
           </button>

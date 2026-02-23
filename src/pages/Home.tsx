@@ -21,10 +21,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-charcoal-950/30" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-px w-12 bg-burgundy-800" />
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">
+              <div className="h-px w-12 bg-burgundy-500" />
               <span className="text-xs text-burgundy-300 uppercase tracking-[0.3em]">
                 Wisconsin School of Business
               </span>
@@ -36,15 +36,15 @@ export default function Home() {
               <span className="text-burgundy-300 italic">Curated by MBAs</span>
             </h1>
 
-            <p className="text-base sm:text-lg text-charcoal-300 leading-relaxed mb-8 max-w-lg">
+            <p className="text-base sm:text-lg text-charcoal-300 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
               Your guide to the best restaurants and bars in Madison — reviewed and rated
               by the WSB MBA Food & Wine Club community.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <Link
                 to="/restaurants"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-800 hover:bg-burgundy-700 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
               >
                 Explore Restaurants
                 <ArrowRight className="w-4 h-4" />
@@ -66,21 +66,21 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-8 text-center">
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
-                <Wine className="w-4 h-4 text-burgundy-800" />
+                <Wine className="w-4 h-4 text-burgundy-500" />
                 <span className="font-serif text-2xl font-bold text-cream-100">{restaurants.length}</span>
               </div>
               <span className="text-xs text-charcoal-400 uppercase tracking-wider">Restaurants</span>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
-                <Star className="w-4 h-4 text-burgundy-800" />
+                <Star className="w-4 h-4 text-burgundy-500" />
                 <span className="font-serif text-2xl font-bold text-cream-100">50+</span>
               </div>
               <span className="text-xs text-charcoal-400 uppercase tracking-wider">Reviews</span>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
-                <Calendar className="w-4 h-4 text-burgundy-800" />
+                <Calendar className="w-4 h-4 text-burgundy-500" />
                 <span className="font-serif text-2xl font-bold text-cream-100">12</span>
               </div>
               <span className="text-xs text-charcoal-400 uppercase tracking-wider">Events / Year</span>
@@ -93,7 +93,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <span className="text-xs text-burgundy-800 uppercase tracking-[0.3em] mb-2 block">
+            <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
               Club Picks
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100">
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div>
-                <span className="text-xs text-burgundy-800 uppercase tracking-[0.3em] mb-2 block">
+                <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
                   Next Event
                 </span>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-4">
@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
                 <Link
                   to="/events"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-800 hover:bg-burgundy-700 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
                 >
                   View All Events
                   <ArrowRight className="w-4 h-4" />
@@ -190,7 +190,7 @@ export default function Home() {
         </p>
         <Link
           to="/register"
-          className="inline-flex items-center gap-2 px-8 py-3 bg-burgundy-800 hover:bg-burgundy-700 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
+          className="inline-flex items-center gap-2 px-8 py-3 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
         >
           Create an Account
           <ArrowRight className="w-4 h-4" />

@@ -27,7 +27,7 @@ export default function RestaurantCard({ restaurant }: RestaurantCardProps) {
   return (
     <Link
       to={`/restaurants/${restaurant.slug}`}
-      className="group block bg-charcoal-900 rounded-lg overflow-hidden border border-charcoal-800/50 hover:border-burgundy-800/50 transition-all duration-300"
+      className="group block bg-charcoal-900 rounded-lg overflow-hidden border border-charcoal-800/50 hover:border-burgundy-500/50 transition-all duration-300"
     >
       {/* Image */}
       <div className="relative aspect-[16/10] overflow-hidden">
@@ -38,7 +38,7 @@ export default function RestaurantCard({ restaurant }: RestaurantCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent" />
         {restaurant.featured && (
-          <span className="absolute top-3 left-3 px-2.5 py-1 bg-burgundy-800/90 text-cream-100 text-[10px] uppercase tracking-widest rounded">
+          <span className="absolute top-3 left-3 px-2.5 py-1 bg-burgundy-500/90 text-cream-100 text-[10px] uppercase tracking-widest rounded">
             Featured
           </span>
         )}

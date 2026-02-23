@@ -33,7 +33,7 @@ export default function Restaurants() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
       {/* Header */}
       <div className="mb-10">
-        <span className="text-xs text-burgundy-800 uppercase tracking-[0.3em] mb-2 block">
+        <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
           Discover
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-3">
@@ -80,7 +80,7 @@ export default function Restaurants() {
               setSelectedCuisine('');
               setSelectedPrice(null);
             }}
-            className="text-sm text-burgundy-800 hover:text-burgundy-700 transition-colors"
+            className="text-sm text-burgundy-500 hover:text-burgundy-400 transition-colors"
           >
             Clear filters
           </button>

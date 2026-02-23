@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <Wine className="w-5 h-5 text-burgundy-800" />
+              <Wine className="w-5 h-5 text-burgundy-500" />
               <span className="font-serif text-lg font-semibold text-cream-100">
                 WSB Food & Wine
               </span>

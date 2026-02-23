@@ -26,7 +26,7 @@ export default function RestaurantDetail() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <h1 className="font-serif text-3xl text-cream-100 mb-4">Restaurant Not Found</h1>
         <p className="text-charcoal-400 mb-6">We couldn't find the restaurant you're looking for.</p>
-        <Link to="/restaurants" className="text-burgundy-800 hover:text-burgundy-700 transition-colors">
+        <Link to="/restaurants" className="text-burgundy-500 hover:text-burgundy-400 transition-colors">
           Back to restaurants
         </Link>
       </div>
@@ -139,7 +139,7 @@ export default function RestaurantDetail() {
               <h3 className="font-serif text-lg font-semibold text-cream-100 mb-5">Details</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 text-burgundy-800 mt-0.5 shrink-0" />
+                  <MapPin className="w-4 h-4 text-burgundy-500 mt-0.5 shrink-0" />
                   <div>
                     <p className="text-sm text-cream-200">{restaurant.address}</p>
                     <p className="text-xs text-charcoal-500 mt-0.5">{restaurant.neighborhood}</p>
@@ -148,14 +148,14 @@ export default function RestaurantDetail() {
 
                 {restaurant.hours && (
                   <div className="flex items-start gap-3">
-                    <Clock className="w-4 h-4 text-burgundy-800 mt-0.5 shrink-0" />
+                    <Clock className="w-4 h-4 text-burgundy-500 mt-0.5 shrink-0" />
                     <p className="text-sm text-cream-200">{restaurant.hours}</p>
                   </div>
                 )}
 
                 {restaurant.phone && (
                   <div className="flex items-start gap-3">
-                    <Phone className="w-4 h-4 text-burgundy-800 mt-0.5 shrink-0" />
+                    <Phone className="w-4 h-4 text-burgundy-500 mt-0.5 shrink-0" />
                     <a
                       href={`tel:${restaurant.phone}`}
                       className="text-sm text-cream-200 hover:text-burgundy-300 transition-colors"
@@ -167,7 +167,7 @@ export default function RestaurantDetail() {
 
                 {restaurant.website && (
                   <div className="flex items-start gap-3">
-                    <Globe className="w-4 h-4 text-burgundy-800 mt-0.5 shrink-0" />
+                    <Globe className="w-4 h-4 text-burgundy-500 mt-0.5 shrink-0" />
                     <a
                       href={restaurant.website}
                       target="_blank"

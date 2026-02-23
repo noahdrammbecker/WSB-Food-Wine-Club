@@ -50,7 +50,7 @@ export default function ReviewForm({ restaurantName, onSubmit }: ReviewFormProps
           onChange={e => setTitle(e.target.value)}
           placeholder="Summarize your experience"
           required
-          className="w-full px-4 py-2.5 bg-charcoal-950 border border-charcoal-800/50 rounded text-sm text-cream-100 placeholder-charcoal-600 focus:outline-none focus:border-burgundy-800/50"
+          className="w-full px-4 py-2.5 bg-charcoal-950 border border-charcoal-800/50 rounded text-sm text-cream-100 placeholder-charcoal-600 focus:outline-none focus:border-burgundy-500/50"
         />
       </div>
 
@@ -66,7 +66,7 @@ export default function ReviewForm({ restaurantName, onSubmit }: ReviewFormProps
           placeholder="What did you order? How was the atmosphere? Would you go back?"
           required
           rows={4}
-          className="w-full px-4 py-2.5 bg-charcoal-950 border border-charcoal-800/50 rounded text-sm text-cream-100 placeholder-charcoal-600 focus:outline-none focus:border-burgundy-800/50 resize-none"
+          className="w-full px-4 py-2.5 bg-charcoal-950 border border-charcoal-800/50 rounded text-sm text-cream-100 placeholder-charcoal-600 focus:outline-none focus:border-burgundy-500/50 resize-none"
         />
       </div>
 
@@ -80,7 +80,7 @@ export default function ReviewForm({ restaurantName, onSubmit }: ReviewFormProps
           type="date"
           value={visitDate}
           onChange={e => setVisitDate(e.target.value)}
-          className="w-full px-4 py-2.5 bg-charcoal-950 border border-charcoal-800/50 rounded text-sm text-cream-100 focus:outline-none focus:border-burgundy-800/50"
+          className="w-full px-4 py-2.5 bg-charcoal-950 border border-charcoal-800/50 rounded text-sm text-cream-100 focus:outline-none focus:border-burgundy-500/50"
         />
       </div>
 
@@ -100,7 +100,7 @@ export default function ReviewForm({ restaurantName, onSubmit }: ReviewFormProps
       <button
         type="submit"
         disabled={rating === 0}
-        className="w-full py-3 bg-burgundy-800 hover:bg-burgundy-700 disabled:bg-charcoal-800 disabled:text-charcoal-600 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
+        className="w-full py-3 bg-burgundy-500 hover:bg-burgundy-400 disabled:bg-charcoal-800 disabled:text-charcoal-600 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
       >
         Submit Review
       </button>

@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <Wine className="w-6 h-6 text-burgundy-800 group-hover:text-burgundy-700 transition-colors" />
+            <Wine className="w-6 h-6 text-burgundy-500 group-hover:text-burgundy-400 transition-colors" />
             <div className="flex flex-col leading-tight">
               <span className="font-serif text-lg sm:text-xl font-semibold text-cream-100 tracking-wide">
                 WSB Food & Wine
@@ -40,7 +40,7 @@ export default function Header() {
                 to={link.to}
                 className={`text-sm tracking-wide uppercase transition-colors ${
                   isActive(link.to)
-                    ? 'text-burgundy-800 font-medium'
+                    ? 'text-burgundy-500 font-medium'
                     : 'text-charcoal-300 hover:text-cream-100'
                 }`}
               >
@@ -49,7 +49,7 @@ export default function Header() {
             ))}
             <Link
               to="/login"
-              className="ml-4 px-5 py-2 bg-burgundy-800 hover:bg-burgundy-700 text-cream-50 text-sm tracking-wide rounded transition-colors"
+              className="ml-4 px-5 py-2 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm tracking-wide rounded transition-colors"
             >
               Sign In
             </Link>
@@ -76,7 +76,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className={`block py-2 text-sm tracking-wide uppercase ${
                   isActive(link.to)
-                    ? 'text-burgundy-800 font-medium'
+                    ? 'text-burgundy-500 font-medium'
                     : 'text-charcoal-300'
                 }`}
               >
@@ -86,7 +86,7 @@ export default function Header() {
             <Link
               to="/login"
               onClick={() => setMobileOpen(false)}
-              className="block w-full text-center py-2.5 mt-2 bg-burgundy-800 text-cream-50 text-sm tracking-wide rounded"
+              className="block w-full text-center py-2.5 mt-2 bg-burgundy-500 text-cream-50 text-sm tracking-wide rounded"
             >
               Sign In
             </Link>

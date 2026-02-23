@@ -17,7 +17,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
       <div className="flex items-start justify-between gap-4 mb-3">
         <div>
           <div className="flex items-center gap-3 mb-1">
-            <div className="w-8 h-8 rounded-full bg-burgundy-800/30 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-burgundy-500/30 flex items-center justify-center">
               <span className="text-sm font-medium text-burgundy-300">
                 {review.userName.charAt(0)}
               </span>

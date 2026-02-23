@@ -9,7 +9,7 @@ export default function Events() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
       {/* Header */}
       <div className="mb-12">
-        <span className="text-xs text-burgundy-800 uppercase tracking-[0.3em] mb-2 block">
+        <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
           What's Happening
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-3">
@@ -48,7 +48,7 @@ export default function Events() {
                 {/* Content */}
                 <div className={`${event.imageUrl ? 'lg:col-span-3' : 'lg:col-span-5'} p-6 sm:p-8 flex flex-col justify-center`}>
                   {i === 0 && (
-                    <span className="inline-block w-fit px-2.5 py-0.5 bg-burgundy-800/20 text-burgundy-300 text-[10px] uppercase tracking-widest rounded mb-3">
+                    <span className="inline-block w-fit px-2.5 py-0.5 bg-burgundy-500/20 text-burgundy-300 text-[10px] uppercase tracking-widest rounded mb-3">
                       Next Up
                     </span>
                   )}
@@ -63,7 +63,7 @@ export default function Events() {
 
                   <div className="flex flex-wrap gap-x-6 gap-y-2 mb-6">
                     <div className="flex items-center gap-2 text-sm text-cream-200">
-                      <Calendar className="w-3.5 h-3.5 text-burgundy-800" />
+                      <Calendar className="w-3.5 h-3.5 text-burgundy-500" />
                       {new Date(event.date).toLocaleDateString('en-US', {
                         weekday: 'short',
                         month: 'long',
@@ -71,11 +71,11 @@ export default function Events() {
                       })}
                     </div>
                     <div className="flex items-center gap-2 text-sm text-cream-200">
-                      <Clock className="w-3.5 h-3.5 text-burgundy-800" />
+                      <Clock className="w-3.5 h-3.5 text-burgundy-500" />
                       {event.time}
                     </div>
                     <div className="flex items-center gap-2 text-sm text-cream-200">
-                      <MapPin className="w-3.5 h-3.5 text-burgundy-800" />
+                      <MapPin className="w-3.5 h-3.5 text-burgundy-500" />
                       {event.location}
                     </div>
                   </div>
@@ -84,7 +84,7 @@ export default function Events() {
                     {event.rsvpLink && (
                       <a
                         href={event.rsvpLink}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-burgundy-800 hover:bg-burgundy-700 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
                       >
                         RSVP
                         <ArrowRight className="w-3.5 h-3.5" />
