@@ -23,7 +23,7 @@ export default function RestaurantDetail() {
 
   if (!restaurant) {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 text-center">
         <h1 className="font-serif text-3xl text-cream-100 mb-4">Restaurant Not Found</h1>
         <p className="text-charcoal-400 mb-6">We couldn't find the restaurant you're looking for.</p>
         <Link to="/restaurants" className="text-burgundy-500 hover:text-burgundy-400 transition-colors">
@@ -48,7 +48,7 @@ export default function RestaurantDetail() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-8">
             <Link
               to="/restaurants"
               className="inline-flex items-center gap-1.5 text-sm text-charcoal-300 hover:text-cream-100 mb-4 transition-colors"
@@ -75,7 +75,7 @@ export default function RestaurantDetail() {
       </div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 sm:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Main Content */}
           <div className="lg:col-span-2">

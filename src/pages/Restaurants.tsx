@@ -30,16 +30,16 @@ export default function Restaurants() {
   }, [searchQuery, selectedCuisine, selectedPrice]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 sm:py-16">
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-10 text-center sm:text-left">
         <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
           Discover
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-3">
           Restaurants & Bars
         </h1>
-        <p className="text-charcoal-400 max-w-2xl">
+        <p className="text-charcoal-400 max-w-2xl mx-auto sm:mx-0">
           Curated picks from the WSB MBA Food & Wine Club. Each listing features an
           officer-written overview and community ratings.
         </p>

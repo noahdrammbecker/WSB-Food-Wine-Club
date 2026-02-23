@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-charcoal-950/95 backdrop-blur-md border-b border-charcoal-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
@@ -68,7 +68,7 @@ export default function Header() {
       {/* Mobile Nav */}
       {mobileOpen && (
         <div className="md:hidden bg-charcoal-900 border-t border-charcoal-800/50">
-          <div className="px-4 py-4 space-y-3">
+          <div className="px-6 py-4 space-y-3">
             {navLinks.map(link => (
               <Link
                 key={link.to}

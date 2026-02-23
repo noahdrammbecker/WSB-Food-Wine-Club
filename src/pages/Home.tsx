@@ -17,11 +17,11 @@ export default function Home() {
             alt="Fine dining"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950 via-charcoal-950/90 to-charcoal-950/60" />
+          <div className="absolute inset-0 bg-charcoal-950/80 sm:bg-transparent sm:bg-gradient-to-r sm:from-charcoal-950 sm:via-charcoal-950/90 sm:to-charcoal-950/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-charcoal-950/30" />
         </div>
 
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-20">
           <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-6">
               <div className="h-px w-12 bg-burgundy-500" />
@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* Stats Bar */}
       <section className="bg-charcoal-900 border-y border-charcoal-800/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
           <div className="grid grid-cols-3 gap-8 text-center">
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
@@ -90,8 +90,8 @@ export default function Home() {
       </section>
 
       {/* Featured Restaurants */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="flex items-end justify-between mb-10">
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 sm:py-24">
+        <div className="text-center sm:text-left sm:flex sm:items-end sm:justify-between mb-10">
           <div>
             <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
               Club Picks
@@ -127,9 +127,9 @@ export default function Home() {
       {/* Next Event */}
       {nextEvent && (
         <section className="bg-charcoal-900 border-y border-charcoal-800/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 sm:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-              <div>
+              <div className="text-center lg:text-left">
                 <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
                   Next Event
                 </span>
@@ -139,7 +139,7 @@ export default function Home() {
                 <p className="text-charcoal-300 leading-relaxed mb-6">
                   {nextEvent.description}
                 </p>
-                <div className="space-y-2 mb-8">
+                <div className="space-y-2 mb-8 inline-block text-left">
                   <p className="text-sm text-cream-200">
                     <span className="text-charcoal-500">Date:</span>{' '}
                     {new Date(nextEvent.date).toLocaleDateString('en-US', {
@@ -156,13 +156,15 @@ export default function Home() {
                     <span className="text-charcoal-500">Location:</span> {nextEvent.location}
                   </p>
                 </div>
-                <Link
-                  to="/events"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
-                >
-                  View All Events
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div>
+                  <Link
+                    to="/events"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-500 hover:bg-burgundy-400 text-cream-50 text-sm font-medium tracking-wide rounded transition-colors"
+                  >
+                    View All Events
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
               {nextEvent.imageUrl && (
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
@@ -179,7 +181,7 @@ export default function Home() {
       )}
 
       {/* About / CTA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 sm:py-24 text-center">
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-4">
           Join the Club
         </h2>

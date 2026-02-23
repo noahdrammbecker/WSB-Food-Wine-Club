@@ -6,16 +6,16 @@ export default function Events() {
   const upcomingEvents = getUpcomingEvents();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 sm:py-16">
       {/* Header */}
-      <div className="mb-12">
+      <div className="mb-12 text-center sm:text-left">
         <span className="text-xs text-burgundy-500 uppercase tracking-[0.3em] mb-2 block">
           What's Happening
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-cream-100 mb-3">
           Club Events
         </h1>
-        <p className="text-charcoal-400 max-w-2xl">
+        <p className="text-charcoal-400 max-w-2xl mx-auto sm:mx-0">
           From wine tastings to multi-course dinners, our events bring the MBA community
           together around great food and drink. Seats are limited — don't miss out.
         </p>
